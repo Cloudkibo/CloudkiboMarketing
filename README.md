@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # kibo-support-marketing
 
 This project was generated with the [Angular Full-Stack Generator](https://github.com/DaftMonk/generator-angular-fullstack) version 3.0.0-rc8.
@@ -26,3 +27,6 @@ Run `grunt build` for building and `grunt serve` for preview.
 ## Testing
 
 Running `npm test` will run the unit tests with karma.
+=======
+# CloudkiboMarketing
+>>>>>>> 2d6d70ce7921e0052f42a694fd7748d43c9f636c
