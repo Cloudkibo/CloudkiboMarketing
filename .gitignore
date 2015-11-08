@@ -1,9 +1,7 @@
-<<<<<<< HEAD
 node_modules
 public
 .tmp
 .idea
-client/bower_components
 dist
 /server/config/local.env.js
 npm-debug.log
@@ -35,4 +33,4 @@ build/Release
 # Dependency directory
 # https://www.npmjs.org/doc/misc/npm-faq.html#should-i-check-my-node_modules-folder-into-git
 node_modules
->>>>>>> 2d6d70ce7921e0052f42a694fd7748d43c9f636c
+
