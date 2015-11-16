@@ -10,16 +10,6 @@ var path = require('path');
 
 module.exports = function(app) {
 
-  app.route('/')
-    .get(function(req, res) {
-      console.log(req.get('host'));
-      console.log('sojharo');
-      if(req.get('host') == 'www.cloudkibo.com')
-        res.sendFile(path.resolve(app.get('appPath') + '/index.html'));
-      else if(req.get('host') == 'www.kibosupport.com')
-        res.sendFile(path.resolve(app.get('appPath2') + '/index.html'));
-    });
-
   // Insert routes below
   app.use('/api/things', require('./api/thing'));
   // All undefined asset or api routes should return a 404
