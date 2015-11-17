@@ -3,9 +3,12 @@ var router = express.Router();
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
+	console.log(req.get('host'))
   if(req.get('host') === 'www.kibosupport.com')
     res.render('index', { title: 'Express' });
   else if(req.get('host') === 'www.cloudkibo.com')
+    res.render('index2', { title: 'Express' });
+    else
     res.render('index2', { title: 'Express' });
 });
 
