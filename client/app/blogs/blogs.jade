@@ -1,0 +1,270 @@
+navbar
+.main
+  .container
+    ul.breadcrumb
+      li
+        a(href='index.html') Home
+      li
+        a(href='javascript:;') Blog
+      li.active Blog Page
+    // BEGIN SIDEBAR & CONTENT
+    .row.margin-bottom-40
+      // BEGIN CONTENT
+      .col-md-12.col-sm-12
+        h1 Blog Page
+        .content-page
+          .row
+            // BEGIN LEFT SIDEBAR
+            .col-md-9.col-sm-9.blog-posts
+              .row
+                .col-md-4.col-sm-4
+                  // BEGIN CAROUSEL
+                  .front-carousel
+                    #myCarousel.carousel.slide
+                      // Carousel items
+                      .carousel-inner
+                        .item
+                          img(alt='', src='../../assets/frontend/pages/img/works/img1.jpg')
+                        .item
+                          img(alt='', src='../../assets/frontend/pages/img/works/img2.jpg')
+                        .item.active
+                          img(alt='', src='../../assets/frontend/pages/img/works/img3.jpg')
+                      // Carousel nav
+                      a.carousel-control.left(data-slide='prev', href='#myCarousel')
+                        i.fa.fa-angle-left
+                      a.carousel-control.right(data-slide='next', href='#myCarousel')
+                        i.fa.fa-angle-right
+                  // END CAROUSEL
+                .col-md-8.col-sm-8
+                  h2
+                    a(href='blog-item.html') Corrupti quos dolores etquas
+                  ul.blog-info
+                    li
+                      i.fa.fa-calendar
+                      | 25/07/2013
+                    li
+                      i.fa.fa-comments
+                      | 17
+                    li
+                      i.fa.fa-tags
+                      | Metronic, Keenthemes, UI Design
+                  p
+                    | At vero eos et accusamus et iusto odio dignissimos ducimus qui sint blanditiis prae sentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non eleifend enim a feugiat. Pellentesque viverra vehicula sem ut volutpat. Lorem ipsum dolor sit amet, consectetur adipiscing condimentum eleifend enim a feugiat.
+                  a.more(href='blog-item.html')
+                    | Read more
+                    i.icon-angle-right
+              hr.blog-post-sep
+              .row
+                .col-md-4.col-sm-4
+                  img.img-responsive(alt='', src='../../assets/frontend/pages/img/works/img4.jpg')
+                .col-md-8.col-sm-8
+                  h2
+                    a(href='blog-item.html') Corrupti quos dolores etquas
+                  ul.blog-info
+                    li
+                      i.fa.fa-calendar
+                      | 25/07/2013
+                    li
+                      i.fa.fa-comments
+                      | 17
+                    li
+                      i.fa.fa-tags
+                      | Metronic, Keenthemes, UI Design
+                  p
+                    | At vero eos et accusamus et iusto odio dignissimos ducimus qui sint blanditiis prae sentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non eleifend enim a feugiat. Pellentesque viverra vehicula sem ut volutpat. Lorem ipsum dolor sit amet, consectetur adipiscing condimentum eleifend enim a feugiat.
+                  a.more(href='blog-item.html')
+                    | Read more
+                    i.icon-angle-right
+              hr.blog-post-sep
+              .row
+                .col-md-4.col-sm-4
+                  // BEGIN VIDEO
+                  iframe(height='205', allowfullscreen='', style='width:100%; border:0', src='http://player.vimeo.com/video/56974716?portrait=0')
+                  // END VIDEO
+                .col-md-8.col-sm-8
+                  h2
+                    a(href='blog-item.html') Corrupti quos dolores etquas
+                  ul.blog-info
+                    li
+                      i.fa.fa-calendar
+                      | 25/07/2013
+                    li
+                      i.fa.fa-comments
+                      | 17
+                    li
+                      i.fa.fa-tags
+                      | Metronic, Keenthemes, UI Design
+                  p
+                    | At vero eos et accusamus et iusto odio dignissimos ducimus qui sint blanditiis prae sentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non eleifend enim a feugiat. Pellentesque viverra vehicula sem ut volutpat. Lorem ipsum dolor sit amet, consectetur adipiscing condimentum eleifend enim a feugiat.
+                  a.more(href='blog-item.html')
+                    | Read more
+                    i.fa.fa-angle-right
+              hr.blog-post-sep
+              .row
+                .col-md-4.col-sm-4
+                  img.img-responsive(alt='', src='../../assets/frontend/pages/img/works/img2.jpg')
+                .col-md-8.col-sm-8
+                  h2
+                    a(href='javascript:;') Corrupti quos dolores etquas
+                  ul.blog-info
+                    li
+                      i.fa.fa-calendar
+                      | 25/07/2013
+                    li
+                      i.fa.fa-comments
+                      | 17
+                    li
+                      i.fa.fa-tags
+                      | Metronic, Keenthemes, UI Design
+                  p
+                    | At vero eos et accusamus et iusto odio dignissimos ducimus qui sint blanditiis prae sentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non eleifend enim a feugiat. Pellentesque viverra vehicula sem ut volutpat. Lorem ipsum dolor sit amet, consectetur adipiscing condimentum eleifend enim a feugiat.
+                  a.more(href='blog-item.html')
+                    | Read more
+                    i.fa.fa-angle-right
+              hr.blog-post-sep
+              ul.pagination
+                li
+                  a(href='javascript:;') Prev
+                li
+                  a(href='javascript:;') 1
+                li
+                  a(href='javascript:;') 2
+                li.active
+                  a(href='javascript:;') 3
+                li
+                  a(href='javascript:;') 4
+                li
+                  a(href='javascript:;') 5
+                li
+                  a(href='javascript:;') Next
+            // END LEFT SIDEBAR
+            // BEGIN RIGHT SIDEBAR
+            .col-md-3.col-sm-3.blog-sidebar
+              // CATEGORIES START
+              h2.no-top-space Categories
+              ul.nav.sidebar-categories.margin-bottom-40
+                li
+                  a(href='javascript:;') London (18)
+                li
+                  a(href='javascript:;') Moscow (5)
+                li.active
+                  a(href='javascript:;') Paris (12)
+                li
+                  a(href='javascript:;') Berlin (7)
+                li
+                  a(href='javascript:;') Istanbul (3)
+              // CATEGORIES END
+              // BEGIN RECENT NEWS
+              h2 Recent News
+              .recent-news.margin-bottom-10
+                .row.margin-bottom-10
+                  .col-md-3
+                    img.img-responsive(alt='', src='../../assets/frontend/pages/img/people/img2-large.jpg')
+                  .col-md-9.recent-news-inner
+                    h3
+                      a(href='javascript:;') Letiusto gnissimos
+                    p Decusamus tiusto odiodig nis simos ducimus qui sint
+                .row.margin-bottom-10
+                  .col-md-3
+                    img.img-responsive(alt='', src='../../assets/frontend/pages/img/people/img1-large.jpg')
+                  .col-md-9.recent-news-inner
+                    h3
+                      a(href='javascript:;') Deiusto anissimos
+                    p Decusamus tiusto odiodig nis simos ducimus qui sint
+                .row.margin-bottom-10
+                  .col-md-3
+                    img.img-responsive(alt='', src='../../assets/frontend/pages/img/people/img3-large.jpg')
+                  .col-md-9.recent-news-inner
+                    h3
+                      a(href='javascript:;') Tesiusto baissimos
+                    p Decusamus tiusto odiodig nis simos ducimus qui sint
+              // END RECENT NEWS
+              // BEGIN BLOG TALKS
+              .blog-talks.margin-bottom-30
+                h2 Popular Talks
+                .tab-style-1
+                  ul.nav.nav-tabs
+                    li.active
+                      a(data-toggle='tab', href='#tab-1') Multipurpose
+                    li
+                      a(data-toggle='tab', href='#tab-2') Documented
+                  .tab-content
+                    #tab-1.tab-pane.row-fluid.fade.in.active
+                      p.margin-bottom-10
+                        | Raw denim you probably haven't heard of them jean shorts Austin. eu banh mi, qui irure terry richardson ex squid Aliquip placeat salvia cillum iphone.
+                      p
+                        a.more(href='javascript:;') Read more
+                    #tab-2.tab-pane.fade
+                      p
+                        | Food truck fixie locavore, accusamus mcsweeney's marfa nulla single-origin coffee squid. aliquip jean shorts ullamco ad vinyl aesthetic magna delectus mollit. Keytar helvetica VHS salvia..
+              // END BLOG TALKS
+              // BEGIN BLOG PHOTOS STREAM
+              .blog-photo-stream.margin-bottom-20
+                h2 Photos Stream
+                ul.list-unstyled
+                  li
+                    a(href='javascript:;')
+                      img(alt='', src='../../assets/frontend/pages/img/people/img5-small.jpg')
+                  li
+                    a(href='javascript:;')
+                      img(alt='', src='../../assets/frontend/pages/img/works/img1.jpg')
+                  li
+                    a(href='javascript:;')
+                      img(alt='', src='../../assets/frontend/pages/img/people/img4-large.jpg')
+                  li
+                    a(href='javascript:;')
+                      img(alt='', src='../../assets/frontend/pages/img/works/img6.jpg')
+                  li
+                    a(href='javascript:;')
+                      img(alt='', src='../../assets/frontend/pages/img/pics/img1-large.jpg')
+                  li
+                    a(href='javascript:;')
+                      img(alt='', src='../../assets/frontend/pages/img/pics/img2-large.jpg')
+                  li
+                    a(href='javascript:;')
+                      img(alt='', src='../../assets/frontend/pages/img/works/img3.jpg')
+                  li
+                    a(href='javascript:;')
+                      img(alt='', src='../../assets/frontend/pages/img/people/img2-large.jpg')
+              // END BLOG PHOTOS STREAM
+              // BEGIN BLOG TAGS
+              .blog-tags.margin-bottom-20
+                h2 Tags
+                ul
+                  li
+                    a(href='javascript:;')
+                      i.fa.fa-tags
+                      | OS
+                  li
+                    a(href='javascript:;')
+                      i.fa.fa-tags
+                      | Metronic
+                  li
+                    a(href='javascript:;')
+                      i.fa.fa-tags
+                      | Dell
+                  li
+                    a(href='javascript:;')
+                      i.fa.fa-tags
+                      | Conquer
+                  li
+                    a(href='javascript:;')
+                      i.fa.fa-tags
+                      | MS
+                  li
+                    a(href='javascript:;')
+                      i.fa.fa-tags
+                      | Google
+                  li
+                    a(href='javascript:;')
+                      i.fa.fa-tags
+                      | Keenthemes
+                  li
+                    a(href='javascript:;')
+                      i.fa.fa-tags
+                      | Twitter
+              // END BLOG TAGS
+            // END RIGHT SIDEBAR
+      // END CONTENT
+    // END SIDEBAR & CONTENT
+footer

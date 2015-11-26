@@ -1,0 +1,263 @@
+navbar
+.main
+  .container
+    ul.breadcrumb
+      li
+        a(href='index.html') Home
+      li
+        a(href='javascript:;') Blog
+      li.active Blog Item
+    // BEGIN SIDEBAR & CONTENT
+    .row.margin-bottom-40
+      // BEGIN CONTENT
+      .col-md-12.col-sm-12
+        h1 Blog Item
+        .content-page
+          .row
+            // BEGIN LEFT SIDEBAR
+            .col-md-9.col-sm-9.blog-item
+              .blog-item-img
+                // BEGIN CAROUSEL
+                .front-carousel
+                  #myCarousel.carousel.slide
+                    // Carousel items
+                    .carousel-inner
+                      .item
+                        img(src='../../assets/frontend/pages/img/posts/img1.jpg', alt='')
+                      .item
+                        // BEGIN VIDEO
+                        iframe(src='http://player.vimeo.com/video/56974716?portrait=0', style='width:100%; border:0', allowfullscreen='', height='259')
+                        // END VIDEO
+                      .item.active
+                        img(src='../../assets/frontend/pages/img/posts/img3.jpg', alt='')
+                    // Carousel nav
+                    a.carousel-control.left(href='#myCarousel', data-slide='prev')
+                      i.fa.fa-angle-left
+                    a.carousel-control.right(href='#myCarousel', data-slide='next')
+                      i.fa.fa-angle-right
+                // END CAROUSEL
+              h2
+                a(href='javascript:;') Corrupti quos dolores etquas
+              p
+                | At vero eos et accusamus et iusto odio dignissimos ducimus qui sint blanditiis prae sentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non eleifend enim a feugiat. Pellentesque viverra vehicula sem ut volutpat. Lorem ipsum dolor sit amet, consectetur adipiscing condimentum eleifend enim a feugiat.
+              blockquote
+                p
+                  | Pellentesque ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante Integer posuere erat a ante.
+                small
+                  | Someone famous
+                  cite(title='Source Title') Source Title
+              p
+                | At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut non libero consectetur adipiscing elit magna. Sed et quam lacus. Fusce condimentum eleifend enim a feugiat. Pellentesque viverra vehicula sem ut volutpat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut non libero magna. Sed et quam lacus. Fusce condimentum eleifend enim a feugiat.
+              p
+                | Culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut non libero consectetur adipiscing elit magna. Sed et quam lacus. Fusce condimentum eleifend enim a feugiat. Pellentesque viverra vehicula sem ut volutpat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut non libero magna. Sed et quam lacus. Fusce condimentum eleifend enim a feugiat.
+              ul.blog-info
+                li
+                  i.fa.fa-user
+                  | By admin
+                li
+                  i.fa.fa-calendar
+                  | 25/07/2013
+                li
+                  i.fa.fa-comments
+                  | 17
+                li
+                  i.fa.fa-tags
+                  | Metronic, Keenthemes, UI Design
+              h2 Comments
+              .comments
+                .media
+                  a.pull-left(href='javascript:;')
+                    img.media-object(src='../../assets/frontend/pages/img/people/img1-small.jpg', alt='')
+                  .media-body
+                    h4.media-heading
+                      | Media heading
+                      span
+                        | 5 hours ago /
+                        a(href='javascript:;') Reply
+                    p
+                      | Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
+                    // Nested media object
+                    .media
+                      a.pull-left(href='javascript:;')
+                        img.media-object(src='../../assets/frontend/pages/img/people/img2-small.jpg', alt='')
+                      .media-body
+                        h4.media-heading
+                          | Media heading
+                          span
+                            | 17 hours ago /
+                            a(href='javascript:;') Reply
+                        p
+                          | Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
+                    // end media
+                    .media
+                      a.pull-left(href='javascript:;')
+                        img.media-object(src='../../assets/frontend/pages/img/people/img3-small.jpg', alt='')
+                      .media-body
+                        h4.media-heading
+                          | Media heading
+                          span
+                            | 2 days ago /
+                            a(href='javascript:;') Reply
+                        p
+                          | Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
+                    // end media
+                // end media
+                .media
+                  a.pull-left(href='javascript:;')
+                    img.media-object(src='../../assets/frontend/pages/img/people/img4-small.jpg', alt='')
+                  .media-body
+                    h4.media-heading
+                      | Media heading
+                      span
+                        | July 25,2013 /
+                        a(href='javascript:;') Reply
+                    p
+                      | Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
+                // end media
+              .post-comment.padding-top-40
+                h3 Leave a Comment
+                form(role='form')
+                  .form-group
+                    label Name
+                    input.form-control(type='text')
+                  .form-group
+                    label
+                      | Email
+                      span.color-red *
+                    input.form-control(type='text')
+                  .form-group
+                    label Message
+                    textarea.form-control(rows='8')
+                  p
+                    button.btn.btn-primary(type='submit') Post a Comment
+            // END LEFT SIDEBAR
+            // BEGIN RIGHT SIDEBAR
+            .col-md-3.col-sm-3.blog-sidebar
+              // CATEGORIES START
+              h2.no-top-space Categories
+              ul.nav.sidebar-categories.margin-bottom-40
+                li
+                  a(href='javascript:;') London (18)
+                li
+                  a(href='javascript:;') Moscow (5)
+                li.active
+                  a(href='javascript:;') Paris (12)
+                li
+                  a(href='javascript:;') Berlin (7)
+                li
+                  a(href='javascript:;') Istanbul (3)
+              // CATEGORIES END
+              // BEGIN RECENT NEWS
+              h2 Recent News
+              .recent-news.margin-bottom-10
+                .row.margin-bottom-10
+                  .col-md-3
+                    img.img-responsive(alt='', src='../../assets/frontend/pages/img/people/img2-large.jpg')
+                  .col-md-9.recent-news-inner
+                    h3
+                      a(href='javascript:;') Letiusto gnissimos
+                    p Decusamus tiusto odiodig nis simos ducimus qui sint
+                .row.margin-bottom-10
+                  .col-md-3
+                    img.img-responsive(alt='', src='../../assets/frontend/pages/img/people/img1-large.jpg')
+                  .col-md-9.recent-news-inner
+                    h3
+                      a(href='javascript:;') Deiusto anissimos
+                    p Decusamus tiusto odiodig nis simos ducimus qui sint
+                .row.margin-bottom-10
+                  .col-md-3
+                    img.img-responsive(alt='', src='../../assets/frontend/pages/img/people/img3-large.jpg')
+                  .col-md-9.recent-news-inner
+                    h3
+                      a(href='javascript:;') Tesiusto baissimos
+                    p Decusamus tiusto odiodig nis simos ducimus qui sint
+              // END RECENT NEWS
+              // BEGIN BLOG TALKS
+              .blog-talks.margin-bottom-30
+                h2 Popular Talks
+                .tab-style-1
+                  ul.nav.nav-tabs
+                    li.active
+                      a(data-toggle='tab', href='#tab-1') Multipurpose
+                    li
+                      a(data-toggle='tab', href='#tab-2') Documented
+                  .tab-content
+                    #tab-1.tab-pane.row-fluid.fade.in.active
+                      p.margin-bottom-10
+                        | Raw denim you probably haven't heard of them jean shorts Austin. eu banh mi, qui irure terry richardson ex squid Aliquip placeat salvia cillum iphone.
+                      p
+                        a.more(href='javascript:;') Read more
+                    #tab-2.tab-pane.fade
+                      p
+                        | Food truck fixie locavore, accusamus mcsweeney's marfa nulla single-origin coffee squid. aliquip jean shorts ullamco ad vinyl aesthetic magna delectus mollit. Keytar helvetica VHS salvia..
+              // END BLOG TALKS
+              // BEGIN BLOG PHOTOS STREAM
+              .blog-photo-stream.margin-bottom-20
+                h2 Photos Stream
+                ul.list-unstyled
+                  li
+                    a(href='javascript:;')
+                      img(alt='', src='../../assets/frontend/pages/img/people/img5-small.jpg')
+                  li
+                    a(href='javascript:;')
+                      img(alt='', src='../../assets/frontend/pages/img/works/img1.jpg')
+                  li
+                    a(href='javascript:;')
+                      img(alt='', src='../../assets/frontend/pages/img/people/img4-large.jpg')
+                  li
+                    a(href='javascript:;')
+                      img(alt='', src='../../assets/frontend/pages/img/works/img6.jpg')
+                  li
+                    a(href='javascript:;')
+                      img(alt='', src='../../assets/frontend/pages/img/pics/img1-large.jpg')
+                  li
+                    a(href='javascript:;')
+                      img(alt='', src='../../assets/frontend/pages/img/pics/img2-large.jpg')
+                  li
+                    a(href='javascript:;')
+                      img(alt='', src='../../assets/frontend/pages/img/works/img3.jpg')
+                  li
+                    a(href='javascript:;')
+                      img(alt='', src='../../assets/frontend/pages/img/people/img2-large.jpg')
+              // END BLOG PHOTOS STREAM
+              // BEGIN BLOG TAGS
+              .blog-tags.margin-bottom-20
+                h2 Tags
+                ul
+                  li
+                    a(href='javascript:;')
+                      i.fa.fa-tags
+                      | OS
+                  li
+                    a(href='javascript:;')
+                      i.fa.fa-tags
+                      | Metronic
+                  li
+                    a(href='javascript:;')
+                      i.fa.fa-tags
+                      | Dell
+                  li
+                    a(href='javascript:;')
+                      i.fa.fa-tags
+                      | Conquer
+                  li
+                    a(href='javascript:;')
+                      i.fa.fa-tags
+                      | MS
+                  li
+                    a(href='javascript:;')
+                      i.fa.fa-tags
+                      | Google
+                  li
+                    a(href='javascript:;')
+                      i.fa.fa-tags
+                      | Keenthemes
+                  li
+                    a(href='javascript:;')
+                      i.fa.fa-tags
+                      | Twitter
+              // END BLOG TAGS
+            // END RIGHT SIDEBAR
+      // END CONTENT
+    // END SIDEBAR & CONTENT
+footer
