@@ -3,7 +3,7 @@
 describe('Controller: BlogpageCtrl', function () {
 
   // load the controller's module
-  beforeEach(module('kiboMktApp'));
+  beforeEach(module('cloudMktApp'));
 
   var BlogpageCtrl, scope;
 

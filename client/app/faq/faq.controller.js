@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('kiboMktApp')
+angular.module('cloudMktApp')
   .controller('FaqCtrl', function ($scope) {
     $scope.message = 'Hello';
   });

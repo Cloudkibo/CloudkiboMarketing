@@ -3,7 +3,7 @@
 describe('Controller: DocumentationCtrl', function () {
 
   // load the controller's module
-  beforeEach(module('kiboMktApp'));
+  beforeEach(module('cloudMktApp'));
 
   var DocumentationCtrl, scope;
 

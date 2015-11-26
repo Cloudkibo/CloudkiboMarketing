@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('kiboMktApp')
+angular.module('cloudMktApp')
   .controller('BlogpageCtrl', function ($scope) {
     $scope.message = 'Hello';
   });

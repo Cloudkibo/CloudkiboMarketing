@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('kiboMktApp')
+angular.module('cloudMktApp')
   .config(function ($routeProvider) {
     $routeProvider
       .when('/pricing', {
