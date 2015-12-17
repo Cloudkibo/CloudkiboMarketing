@@ -8,6 +8,8 @@ var express = require('express');
 var config = require('./config/environment');
 var http = require('http');
 
+var fs = require('fs');
+
 // Setup server
 var httpapp = express();
 var app = express();
