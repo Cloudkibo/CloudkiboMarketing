@@ -24,6 +24,8 @@ var all = {
   // Server IP
   ip: process.env.IP || '0.0.0.0',
 
+  secure_port: process.env.SECURE_PORT || 8443,
+
   // Should we populate the DB with sample data?
   seedDB: false,
 
