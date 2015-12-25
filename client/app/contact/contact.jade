@@ -15,20 +15,22 @@ navbar
               h2 Contact Form
               p Contact CloudKibo and provide feedback
               // BEGIN FORM
-              form(action='#', role='form')
+              form(role='form', method='post', name='form', ng-submit='giveFeedback(form)', novalidate='novalidate')
                 .form-group
                   label(for='contacts-name') Name
-                  input#contacts-name.form-control(type='text')
+                  input#contacts-name.form-control(type='text', ng-model='data.name')
                 .form-group
                   label(for='contacts-email') Email
-                  input#contacts-email.form-control(type='email')
+                  input#contacts-email.form-control(type='email', ng-model='data.email')
                 .form-group
                   label(for='contacts-message') Message
-                  textarea#contacts-message.form-control(rows='5')
+                  textarea#contacts-message.form-control(rows='5', ng-model='data.message')
                 button.btn.btn-primary(type='submit')
                   i.icon-ok
                   | Send
                 button.btn.btn-default(type='button') Cancel
               // END FORM
+              p &nbsp;
+              alert(ng-repeat='alert in alerts', type='alert.type', close='closeAlert($index)') {{alert.msg}}
             .col-md-3.col-sm-3.sidebar2
 footer
