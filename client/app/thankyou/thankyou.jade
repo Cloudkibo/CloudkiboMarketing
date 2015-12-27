@@ -1,0 +1,20 @@
+navbar
+.main
+  .container
+    ul.breadcrumb
+      li
+        a(href='/') Home
+      li.active Feedback Response
+    .row.margin-bottom-40
+      // BEGIN CONTENT
+      .col-md-12
+        h1 Thank you
+        .content-page
+          .row
+            .col-md-9.col-sm-9
+              h2
+              p Thank you for contacting Kibosupport and providing feedback.
+              p &nbsp;
+              alert(ng-repeat='alert in alerts', type='alert.type', close='closeAlert($index)') {{alert.msg}}
+            .col-md-3.col-sm-3.sidebar2
+footer
