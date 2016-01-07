@@ -1,227 +1,175 @@
 navbar
 .main
-  .container
-    ul.breadcrumb
-      li
-        a(href='index.html') Home
-      li
-        a(href='javascript:;') Pages
-      li.Documentation
-    .row.margin-bottom-40
-      // BEGIN CONTENT
-      .col-md-12.col-sm-12
-        h1 Documentation
-        .content-page
-          .row
-            .col-md-3.col-sm-3
-              ul.tabbable.faq-tabbable
-                li.active
-                  a(href='#tab_1', data-toggle='tab') Rest API
-                li
-                  a(href='#tab_2', data-toggle='tab') Webhook
-                li
-                  a(href='#tab_3', data-toggle='tab') Server Side
-                li
-                  a(href='#tab_1', data-toggle='tab') Client Side
-                li
-                  a(href='#tab_2', data-toggle='tab') Integration
-                li
-                  a(href='#tab_3', data-toggle='tab') Backend
-            .col-md-9.col-sm-9
-              .tab-content(style='padding:0; background: #fff;')
-                // START TAB 1
+    .container
+      ul.breadcrumb
+        li
+          a(href='index.html') Home
+        li User Guide
+      .row.margin-bottom-40
+        // BEGIN CONTENT
+        .col-md-12.col-sm-12
+          h1 User Guide
+          .content-page
+            .row
+              .col-md-3.col-sm-3
+                ul.tabbable.faq-tabbable
+                  li
+                    a(href='#tab_1', data-toggle='tab', aria-expanded='true') Overview
+                  li
+                    a(href='#tab_2', data-toggle='tab', aria-expanded='true') Invite People
+                  li
+                    a(href='#tab_3', data-toggle='tab', aria-expanded='true') Add Contact
+                  li
+                    a(href='#tab_4', data-toggle='tab', aria-expanded='true') One Click Call
+                  li
+                    a(href='#tab_5', data-toggle='tab', aria-expanded='true') Conference Call
+                  li
+                    a(href='#tab_6', data-toggle='tab', aria-expanded='true') Contacts and Chat
+                  li
+                    a(href='#tab_7', data-toggle='tab', aria-expanded='true') Groups
+              .col-md-9.col-sm-9
+                .tab-content(style='padding:0; background: #fff;')
+                  // START TAB 1
                 #tab_1.tab-pane.active
                   #accordion1.panel-group
                     .panel.panel-default
                       .panel-heading
                         h4.panel-title
-                          a.accordion-toggle(href='#accordion1_1', data-parent='#accordion1', data-toggle='collapse')
-                            | 1. Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry ?
-                      #accordion1_1.panel-collapse.collapse.in
+                          a.accordion-toggle(href='#accordion1_1', data-parent='#accordion1', data-toggle='collapse', aria-expanded='true')
+                            | Overview
+                      #accordion1_1.panel-collapse
                         .panel-body
-                          | Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-                    .panel.panel-default
-                      .panel-heading
-                        h4.panel-title
-                          a.accordion-toggle.collapsed(href='#accordion1_2', data-parent='#accordion1', data-toggle='collapse')
-                            | 2. Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry ?
-                      #accordion1_2.panel-collapse.collapse
-                        .panel-body
-                          | Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch   et.
-                          | Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-                    .panel.panel-success
-                      .panel-heading
-                        h4.panel-title
-                          a.accordion-toggle.collapsed(href='#accordion1_3', data-parent='#accordion1', data-toggle='collapse')
-                            | 3. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor ?
-                      #accordion1_3.panel-collapse.collapse
-                        .panel-body
-                          | Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch   et.
-                          | Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-                    .panel.panel-warning
-                      .panel-heading
-                        h4.panel-title
-                          a.accordion-toggle.collapsed(href='#accordion1_4', data-parent='#accordion1', data-toggle='collapse')
-                            | 4. Wolf moon officia aute, non cupidatat skateboard dolor brunch ?
-                      #accordion1_4.panel-collapse.collapse
-                        .panel-body
-                          | 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-                    .panel.panel-danger
-                      .panel-heading
-                        h4.panel-title
-                          a.accordion-toggle.collapsed(href='#accordion1_5', data-parent='#accordion1', data-toggle='collapse')
-                            | 5. Leggings occaecat craft beer farm-to-table, raw denim aesthetic ?
-                      #accordion1_5.panel-collapse.collapse
-                        .panel-body
-                          | 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et
-                    .panel.panel-default
-                      .panel-heading
-                        h4.panel-title
-                          a.accordion-toggle.collapsed(href='#accordion1_6', data-parent='#accordion1', data-toggle='collapse')
-                            | 6. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth ?
-                      #accordion1_6.panel-collapse.collapse
-                        .panel-body
-                          | 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et
-                    .panel.panel-default
-                      .panel-heading
-                        h4.panel-title
-                          a.accordion-toggle.collapsed(href='#accordion1_7', data-parent='#accordion1', data-toggle='collapse')
-                            | 7. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft ?
-                      #accordion1_7.panel-collapse.collapse
-                        .panel-body
-                          | 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et
-                // END TAB 1
-                // START TAB 2
+                          p
+                            | CloudKibo is a next generation communication technology. It’s intuitive, cost effective, and rich with functionality. It can be used both for internal and external communications. It provides integrated and unified voice, video, and data communication across web.
+                          h4 HD Video Call
+                          p
+                            | CloudKibo uses VP8 codec, which allows efficient use of bandwidth estimation for better video quality. VP8 adaptable technology allows you have HD quality. It also includes components to conceal pack loss and clean up noisy images.
+                          h4 HD Audio Call
+                          p
+                            | CloudKibo stunning HD audio quality lets you experience the full, glorious range of the human voice. Wideband and Narrowband PSTN codec are supported.
+                          h4 Screen Sharing
+                          p
+                            | Cloudkibo lets you share your weekly project status, share your weekly sales slides, collect feedback on the latest design rendering, and makes sharing a screen easy as clicking the “Share Screen” button.
+                          h4 File Transfer (up to any size)
+                          p
+                            | Cloudkibo makes it simple for you or anyone in your call to instantly share notes, documents, videos, or any other file. File transfer is highly secured. All file transfers are peer to peer with 128 Bit encryption. Current email systems normally limit your attachments to 25MB and multiple copies of your files are left on the mail servers.
+                          h4 Chat
+                          p
+                            | Instant Messaging can be done between contacts, group calls and also in conference calls. Chat between contacts is stored and retrieved for later preview. Chat history can be removed by users.
+                          h4 Nothing to Install
+                          p
+                            | Downloading, installing, and updating plugins can be complex, error prone, and annoying. With CloudKibo you are able to join the call straight from your browser without any need to download and install client software. Plugins can be difficult to deploy, debug, troubleshoot, test and maintain and may require licensing and integration with complex, expensive technology.
+                          h4 Integrated Social Profiles
+                          p
+                            | CloudKibo connects you to social network services like Facebook, Google, and Microsoft. You can connect and import your friends from these social networks.
+                          h4 Cost Effective and Scalable
+                          p
+                            | Cloudkibo is based on modern Web technology like Nodejs, Angularjs, Socket.io, WebRTC etc, thus it is highly scalable. Also as most of the communication is Peer to Peer the need for a large and complex server platform is minimized resulting in a very cost effective solution.
+                          h4 Security
+                          p
+                            | Cloudkibo is highly secured as all communication is 128 Bit encrypted and the base technology uses Peer to Peer communication between two end points. No customer content audio, video, or files are stored on the central server.
                 #tab_2.tab-pane
                   #accordion2.panel-group
-                    .panel.panel-warning
+                    .panel.panel-default
                       .panel-heading
                         h4.panel-title
-                          a.accordion-toggle(href='#accordion2_1', data-parent='#accordion2', data-toggle='collapse')
-                            | 1. Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry ?
-                      #accordion2_1.panel-collapse.collapse.in
+                          a.accordion-toggle(href='#accordion2_1', data-parent='#accordion2', data-toggle='collapse', aria-expanded='true')
+                            | Invite People
+                      #accordion2_1.panel-collapse
                         .panel-body
                           p
-                            | Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                            | It is very easy to invite the people to CloudKibo to connect. Just give their email address and we would send them invitation email on your behalf.
                           p
-                            | Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-                    .panel.panel-danger
-                      .panel-heading
-                        h4.panel-title
-                          a.accordion-toggle(href='#accordion2_2', data-parent='#accordion2', data-toggle='collapse')
-                            | 2. Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry ?
-                      #accordion2_2.panel-collapse.collapse
-                        .panel-body
-                          | Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch   et.
-                          | Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-                    .panel.panel-success
-                      .panel-heading
-                        h4.panel-title
-                          a.accordion-toggle(href='#accordion2_3', data-parent='#accordion2', data-toggle='collapse')
-                            | 3. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor ?
-                      #accordion2_3.panel-collapse.collapse
-                        .panel-body
-                          | Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch   et.
-                          | Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-                    .panel.panel-default
-                      .panel-heading
-                        h4.panel-title
-                          a.accordion-toggle(href='#accordion2_4', data-parent='#accordion2', data-toggle='collapse')
-                            | 4. Wolf moon officia aute, non cupidatat skateboard dolor brunch ?
-                      #accordion2_4.panel-collapse.collapse
-                        .panel-body
-                          | 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-                    .panel.panel-default
-                      .panel-heading
-                        h4.panel-title
-                          a.accordion-toggle(href='#accordion2_5', data-parent='#accordion2', data-toggle='collapse')
-                            | 5. Leggings occaecat craft beer farm-to-table, raw denim aesthetic ?
-                      #accordion2_5.panel-collapse.collapse
-                        .panel-body
-                          | 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et
-                    .panel.panel-default
-                      .panel-heading
-                        h4.panel-title
-                          a.accordion-toggle(href='#accordion2_6', data-parent='#accordion2', data-toggle='collapse')
-                            | 6. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth ?
-                      #accordion2_6.panel-collapse.collapse
-                        .panel-body
-                          | 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et
-                    .panel.panel-default
-                      .panel-heading
-                        h4.panel-title
-                          a.accordion-toggle(href='#accordion2_7', data-parent='#accordion2', data-toggle='collapse')
-                            | 7. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft ?
-                      #accordion2_7.panel-collapse.collapse
-                        .panel-body
-                          | 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et
-                // END TAB 3
-                // START TAB 3
+                            img(src='/assets/images/Selection_006.png', alt='')
+                              // END TAB 2
+                            // START TAB 3
                 #tab_3.tab-pane
                   #accordion3.panel-group
-                    .panel.panel-danger
+                    .panel.panel-default
                       .panel-heading
                         h4.panel-title
-                          a.accordion-toggle(href='#accordion3_1', data-parent='#accordion3', data-toggle='collapse')
-                            | 1. Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry ?
-                      #accordion3_1.panel-collapse.collapse.in
+                          a.accordion-toggle(href='#accordion3_1', data-parent='#accordion3', data-toggle='collapse', aria-expanded='true')
+                            | Add Contact
+                      #accordion3_1.panel-collapse
                         .panel-body
                           p
-                            | Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et.
+                            | We give you option to add contacts to your friend list by email address or by username.
                           p
-                            | Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et.
+                            img(src='/assets/images/Selection_007.png', alt='')
                           p
-                            | Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-                    .panel.panel-success
-                      .panel-heading
-                        h4.panel-title
-                          a.accordion-toggle(href='#accordion3_2', data-parent='#accordion3', data-toggle='collapse')
-                            | 2. Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry ?
-                      #accordion3_2.panel-collapse.collapse
-                        .panel-body
-                          | Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch   et.
-                          | Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                            img(src='/assets/images/Selection_008.png', alt='')
+                          p
+                            img(src='/assets/images/Selection_009.png', alt='')
+                              // END TAB 3
+                              // START TAB 4
+                #tab_4.tab-pane
+                  #accordion4.panel-group
                     .panel.panel-default
                       .panel-heading
                         h4.panel-title
-                          a.accordion-toggle(href='#accordion3_3', data-parent='#accordion3', data-toggle='collapse')
-                            | 3. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor ?
-                      #accordion3_3.panel-collapse.collapse
+                          a.accordion-toggle(href='#accordion4_1', data-parent='#accordion4', data-toggle='collapse', aria-expanded='true')
+                            | One Click Call
+                      #accordion4_1.panel-collapse
                         .panel-body
-                          | Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch   et.
-                          | Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                          p
+                            | CloudKibo lets you invite your friend to a call with a click of a button. Don’t get tied down to a clumsy keypad and cryptic codes to control and manage your calls.
+                          p
+                            img(src='/assets/images/Selection_010.png', alt='')
+                            // END TAB 4
+                            // START TAB 5
+                #tab_5.tab-pane
+                  #accordion5.panel-group
                     .panel.panel-default
                       .panel-heading
                         h4.panel-title
-                          a.accordion-toggle(href='#accordion3_4', data-parent='#accordion3', data-toggle='collapse')
-                            | 4. Wolf moon officia aute, non cupidatat skateboard dolor brunch ?
-                      #accordion3_4.panel-collapse.collapse
+                          a.accordion-toggle(href='#accordion5_1', data-parent='#accordion5', data-toggle='collapse', aria-expanded='true')
+                            | Conference Call
+                      #accordion5_1.panel-collapse
                         .panel-body
-                          | 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                          p
+                            | CloudKibo also allows you to invite multiple people to join the Web meeting without installing any complex software. All they need to do is visit a URL and join the meeting.
+                          p
+                            img(src='/assets/images/Selection_011.png', alt='')
+                          p
+                            | Enjoy the world class conference call experience. Use the following amazing features:
+                            ul
+                              li Screen Sharing
+                              li File Transferring
+                              li Text Chat
+                              li Mute / Unmute
+                              li Hide / Show Video
+                              li Never wonder who spoke
+                          p
+                            img(src='/assets/images/Selection_012.png', alt='')
+                            // END TAB 5
+                            // START TAB 6
+                #tab_6.tab-pane
+                  #accordion6.panel-group
                     .panel.panel-default
                       .panel-heading
                         h4.panel-title
-                          a.accordion-toggle(href='#accordion3_5', data-parent='#accordion3', data-toggle='collapse')
-                            | 5. Leggings occaecat craft beer farm-to-table, raw denim aesthetic ?
-                      #accordion3_5.panel-collapse.collapse
+                          a.accordion-toggle(href='#accordion6_1', data-parent='#accordion6', data-toggle='collapse', aria-expanded='true')
+                            | Contacts and Chat
+                      #accordion6_1.panel-collapse
                         .panel-body
-                          | 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et
+                          p
+                            | Manage your contacts. See chat history with them. Send them one to one files, start one to one calls with them,  remove your chat history. You can approve who adds you as friend.
+                          p
+                            img(src='/assets/images/Selection_005.png', alt='')
+                              // END TAB 6
+                              // START TAB 7
+                #tab_7.tab-pane
+                  #accordion7.panel-group
                     .panel.panel-default
                       .panel-heading
                         h4.panel-title
-                          a.accordion-toggle(href='#accordion3_6', data-parent='#accordion3', data-toggle='collapse')
-                            | 6. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth ?
-                      #accordion3_6.panel-collapse.collapse
+                          a.accordion-toggle(href='#accordion7_1', data-parent='#accordion7', data-toggle='collapse', aria-expanded='true')
+                            | Groups
+                      #accordion7_1.panel-collapse
                         .panel-body
-                          | 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et
-                    .panel.panel-default
-                      .panel-heading
-                        h4.panel-title
-                          a.accordion-toggle(href='#accordion3_7', data-parent='#accordion3', data-toggle='collapse')
-                            | 7. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft ?
-                      #accordion3_7.panel-collapse.collapse
-                        .panel-body
-                          | 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et
-                // END TAB 3
-      // END CONTENT
+                          p
+                            | Organize your friends into the groups and call the whole group at once and invite all of your group members in a group call.
+                          p
+                            img(src='/assets/images/Selection_004.png', alt='')
+                              // END TAB 7
 footer
