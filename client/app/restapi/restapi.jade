@@ -1,0 +1,155 @@
+navbar
+.main
+  .container
+    .col-md-12.col-sm-12
+      .content-page
+          sidebar
+          div(class="content col-md-9 col-sm-9")
+            h1 REST API Documentation
+            p On server side, we have directory ‘api’. All the mongodb collections (relations) with their constraints and test code are defined there.
+            p From there, we also expose the REST API for clients. The URI for any resource is often like this “/api/users/me”. Code for this on server side can be located by looking at URI alone. We have folder api, then users folder and then we go to index.js file to fine route ‘/me’ and its controller.
+            p On client side, we have an Angularjs service which has all the URIs written at one place. The angularjs application uses them whenever needs to do http request. With this, we don’t have to modify the URI at all the places where it is used on client if URI is changed on server. We have to modify the Rest Service file only.
+            p For example if we have entity User and the link /api/users/:id/password , the URI would be www.cloudkibo.com/api/users/:id/password
+              This link is used when user wants to change their password.
+            p Following are the REST API used by Cloudkibo. It shows the HTTP method type 
+              b Get, Post, Delete, Put
+            
+            ol
+               li 
+                  b User Entity
+                  ol
+                             li 
+                                span /api/users/ Get list of users
+                                p HTTP Method: GET
+                             li 
+                                span /api/users/:id Deletes the user
+                                p    HTTP Method: DELETE
+                             li 
+                               span /api/usesr/me Get user Profile
+                               p    HTTP Method: GET
+                             li
+                              span /api/users/:id/password Changes user's password
+                              p   HTTP Method: PUT
+                             li
+                              span /api/users/:id Get single user
+                              p    HTTP Method: GET
+                             li
+                              span  /api/users/ Create new user
+                              p     HTTP Method: POST
+                              p     Parameters: firstname, lastname, email, phone, username, password,
+                             li
+                              span /api/users/userimage/update Update user image
+                              p    HTTP Method: POST
+                             li  
+                              span   /api/users/userimage/:image Get user image
+                               p     HTTP Method: GET
+                             li
+                              span  /api/users/update Change user profile
+                              p     HTTP Method: PUT
+                             li
+                              span  /api/users/searchbyusername Search by user name
+                              p     HTTP Method: POST
+                              p     Parameters: searchusername
+                             li
+                              span /api/users/searchbyuseremail Search by user email
+                              p    HTTP Method: POST
+                              p    Parameters: searchemail
+                             li
+                              span /api/users/invitebyemail Invite by email
+                              p    HTTP Method: POST
+                              p    Parameters: recipientEmail, shortmessage
+                             li
+                              span /api/users/initialtestingdone Initial testing of webcam and webRTC support is done here
+                              p    HTTP Method: POST
+                              p    Parameters: initialTesting
+                             li
+                              span /api/users/setstatusmessage Sets the status message of user
+                              p    HTTP Method: POST
+                              p    Parameters: status
+                             li
+                              span  /api/users/resetpasswordrequest Password reset route
+                              p     HTTP Method: POST
+                              p    Parameters: email
+                             li
+                              span /api/users/changepassword When user gives new password
+                              p    HTTP Method: POST
+                              p    Parameters: password
+                             li
+                              span /api/users/saveusername Save username, email and phone number for Federated authenticated user
+                              p    HTTP Method: POST
+                              p    Parameters: username, email, phone
+               li
+                 b Contact
+                 ol
+                    li
+                       span /api/contactslist/ Gives lists of users
+                       p    HTTP Method: GET
+                    li
+                       span /api/contactslist/pendingcontacts Add contact with cloudkibo username
+                       p    HTTP Method: GET
+                    li
+                       span /api/contactslist/addbyusername Add contact with email address
+                       p    HTTP Method: POST
+                       p    Parameters: username
+                    li
+                       span /api/contactslist/addbyemail Accepts the contact add request
+                       p    HTTP Method: POST
+                       p    Parameters: useremail
+                    li
+                       span /api/contactslist/approvefriendrequest Reject the contact add request
+                       p    HTTP Method: POST
+                       p    Parameters: index
+                    li
+                       span /api/contactslist/rejectfriendrequest Remove contact from contact list
+                       p    HTTP Method: POST
+                       p    Parameters: index
+                    li
+                       span /api/contactslist/removefriend removes friend from the contact list
+                       p    HTTP Method: POST
+                       p    Parameters: firstname, lastname, status, username
+                li
+                  b User Chat
+                  ol
+                    li
+                      span  /api/userchat/ Bring users chat
+                      p     HTTP Method: POST
+                      p     Parameters: username1, username2
+                    li
+                      span  /api/userchat/save Saves contact chat
+                      p     HTTP Method: POST
+                      p     Parameters: to, from, fromFullName, msg, owneruser
+                    li
+                      span  /api/userchat/markasread marks chat as read
+                      p     HTTP Method: POST
+                      p     Parameters: user1_id, user2_id
+                    li
+                      span  /api/userchat/removechathistory Removes chat history of the contact
+                      p  HTTP Method: POST
+                      p  Parameters: username
+                li
+                  b Meeting Record
+                  ol
+                    li
+                      span /api/meetingrecord/ Fetch Meeting Record
+                      p    HTTP Method: POST
+                      p    Parameters : companyid
+                li
+                  b Auth
+                  ol
+                    li
+                     span /auth/local/ local authentication
+                     p    HTTP Method: POST
+                     p    Parameters: username, password
+
+                    li
+                     span /auth/facebook/ Facebook authentication
+                     p    HTTP Method: GET
+                    li
+                     span /auth/windowslive/ Microsoft authentication
+                     p    HTTP Method: GET
+                    li
+                     span  /auth/google/ Google authentication
+                     p     HTTP Method: GET
+                     
+
+footer
