@@ -6,3 +6,8 @@
   margin: 0 !important;
   background:  #e7f4f4;
 }
+pre code{
+text-shadow:none;
+background-color:#f5f5f5;
+border:0px;
+}
