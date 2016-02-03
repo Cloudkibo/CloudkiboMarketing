@@ -1,0 +1,72 @@
+navbar
+.main
+  .container
+    .col-md-12.col-sm-12
+      .content-page
+          sidebar 
+          div(class="content col-md-9 col-sm-9")
+            h1 Sample Code
+            p  Below code snippet will help you in getting started with services provided by our REST APIs
+            h2 Define header containing your token
+            pre
+                code
+                         | var  headers =  {
+                         | 'kibo-app-id'    : '556qvvi8jyvfhxrxmu73dxun9za8x5u6n59',
+                         | 'kibo-app-secret': '1121111aaaaar16cdu5h79xvx',
+                         | 'kibo-client-id' : 'abc',
+                         | 'content-type'   : 'application/x-www-form-urlencoded'
+                         |     }
+            h2 Call Our REST API through your server
+            ol  
+               li
+                 h3 Get user profile information from CloudKibo
+                 pre
+                    code
+                         | router.get('/userprofile', function(req, res, next) {
+                         |                  var options = {
+                         |                         url: 'https://api.cloudkibo.com/api/users/me',
+                         |                        rejectUnauthorized : false,
+                         |                         headers:headers
+                         |                       };
+                         |                   function callback(error, response, body) {
+                         |                     if (!error && response.statusCode == 200) {
+                         |                           var info = JSON.parse(body);
+                         |                          res.render('userprofile',{mydata:info});
+                         |                         }
+                         |                     else
+                         |                       {
+                         |                         data = null;
+                         |                         console.log(error);
+                         |                         res.send('could not fetch data.');
+                         |                       }
+                         |                    }
+                         |                   request(options, callback);
+                         |       });
+                         
+               li
+                  h3 Get user contact list information from CloudKibo
+                  pre
+                    code
+                         | router.get('/contactlist', function(req, res, next) {
+                         |         var options = {
+                         |                   url: 'https://api.cloudkibo.com/api/contactslist',
+                         |                   rejectUnauthorized : false,
+                         |                   headers:headers
+                         |                 };
+                         |             function callback(error, response, body) {
+                         |               if (!error && response.statusCode == 200) {
+                         |                     var info = JSON.parse(body);
+                         |                     res.render('contactlist',{mydata:info});
+                         |                     }
+                         |              else
+                         |                 {
+                         |                   data = null;
+                         |                   console.log(error);
+                         |                    res.send('Could not fetch data');
+                         |                 }
+                         |              }
+                         |             request(options, callback);
+                         |          });
+                         
+
+footer
