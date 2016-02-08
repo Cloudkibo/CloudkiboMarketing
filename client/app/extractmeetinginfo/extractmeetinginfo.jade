@@ -5,10 +5,10 @@ navbar
       .content-page
           sidebar 
           div(class="content col-md-9 col-sm-9")
-            h1 Extract Meeting Data
-            p  Below code snippet will help you in fetching meeting record from CloudKibo
-            h2 Define header containing your token
-            pre
+           h1 Extract Meeting Data
+           p  Below code snippet will help you in fetching meeting record from CloudKibo
+           h3 Define header containing your token
+           pre
                 code
                          | var  headers =  {
                          | 'kibo-app-id'    : '556qvvi8jyvfhxrxmu73dxun9za8x5u6n59',
@@ -16,7 +16,10 @@ navbar
                          | 'kibo-client-id' : 'abc',
                          | 'content-type'   : 'application/x-www-form-urlencoded'
                          |     }
-            h2 Call Our REST API through your server
+           h3 Call Our REST API through your server
+           ol
+              li 
+                  b GET LIST OF ALL CHAT IN ALL MEETING SESSIONS
                  pre
                     code
                          |  router.get('/meetingrecord', function(req, res, next) {
@@ -40,4 +43,33 @@ navbar
                          |            }
                          |           request.post(options, callback);
                          |       });
+              li
+                  b GET LIST OF ALL CHAT IN SPECIFIC MEETING SESSION
+                  p This API requires request_id parameter.
+                  p request_id parameter refers to the unique session ID for which you need to extract chat data.
+                   pre
+                    code
+                         | router.post('/meetingrecord/specific_conference', function(req, res, next) {
+                         |    var options = {
+                         |           url: 'https://api.cloudkibo.com/api/meetingchat/specific_conference',
+                         |           headers:headers,
+                         |           rejectUnauthorized : false,
+                         |           form:{ 'companyid': headers['kibo-client-id'],'request_id':req.body.requestid}
+                         |         };
+                         |     function callback(error, response, body) {
+                         |       if (!error && response.statusCode == 200) {
+                         |             var info = JSON.parse(body);
+                         |             res.render('meetingrecord',{mydata:info});
+                         |           }
+                         |       else
+                         |         {
+                         |           data = null;
+                         |           console.log(error);
+                         |           res.send('could not fetch data.');
+                         |         }
+                         |      }
+                         |     request.post(options, callback);
+                         |  });
+
+
 footer

@@ -6,16 +6,10 @@ navbar
           sidebar
           div(class="content col-md-9 col-sm-9")
             h1 REST API Documentation
-            p On server side, we have directory ‘api’. All the mongodb collections (relations) with their constraints and test code are defined there.
-            p From there, we also expose the REST API for clients. The URI for any resource is often like this “/api/users/me”. Code for this on server side can be located by looking at URI alone. We have folder api, then users folder and then we go to index.js file to fine route ‘/me’ and its controller.
-            p On client side, we have an Angularjs service which has all the URIs written at one place. The angularjs application uses them whenever needs to do http request. With this, we don’t have to modify the URI at all the places where it is used on client if URI is changed on server. We have to modify the Rest Service file only.
-            p For example if we have entity User and the link /api/users/:id/password , the URI would be www.cloudkibo.com/api/users/:id/password
-              This link is used when user wants to change their password.
-            p Following are the REST API used by Cloudkibo. It shows the HTTP method type 
-              b Get, Post, Delete, Put
-            
+            p  Welcome to the CloudKibo API documentation! Our API provides flexible tools that can be used in the creation of new, outstanding projects.
             ol
-               li 
+              //
+                li 
                   b User Entity
                   ol
                              li 
@@ -78,7 +72,7 @@ navbar
                               span /api/users/saveusername Save username, email and phone number for Federated authenticated user
                               p    HTTP Method: POST
                               p    Parameters: username, email, phone
-               li
+                li
                  b Contact
                  ol
                     li
@@ -127,13 +121,6 @@ navbar
                       p  HTTP Method: POST
                       p  Parameters: username
                 li
-                  b Meeting Record
-                  ol
-                    li
-                      span /api/meetingrecord/ Fetch Meeting Record
-                      p    HTTP Method: POST
-                      p    Parameters : companyid
-                li
                   b Auth
                   ol
                     li
@@ -150,6 +137,46 @@ navbar
                     li
                      span  /auth/google/ Google authentication
                      p     HTTP Method: GET
+                
+              li
+                  b Meeting Chat
+                  ol
+                    li
+                      span
+                           b GET LIST OF ALL CHAT IN ALL MEETING SESSIONS
+                      p    Use this integration to get the list of all chat in all meeting sessions of a company
+                      p    Path : https://api.cloudkibo.com/api/meetingchat/ 
+                      p    HTTP Method: POST
+                      p    Parameters : companyid
                      
-
+                    li
+                      span
+                           b GET LIST OF ALL CHAT IN SPECIFIC MEETING SESSION
+                      p    Use this integration to get all chat done in specific meeting session of a company
+                      p    Path : https://api.cloudkibo.com/api/meetingchat/specific_conference
+                      p    HTTP Method: POST
+                      p    Parameters : companyid,request_id 
+                    
+                    li
+                      span
+                           b GENERATE THE MEETING URL
+                      p    Use this integration to get conference session URL
+                      p    Path : https://api.cloudkibo.com/api/meetingchat/generate_url
+                      p    HTTP Method: POST
+                      p    Parameters : companyid,request_id,agentname,visitorname,agentemail,visitoremail
+                      p    Response   : {url_agent : meetingurl, url_customer : meetingurl}
+              
+              
+              li
+                  b Company Account
+                  ol
+                    li
+                      span
+                           b UPDATE THE WEBHOOK URL
+                      p    Use this integration to update the webhook URL of the company's server
+                      p    Path :  https://api.cloudkibo.com/api/companyaccounts/webhook 
+                      p    HTTP Method: POST
+                      p    Parameters : webhook
+                      p    Response : {status: 'Updated Webhook URL'}
+                   
 footer

@@ -1,0 +1,54 @@
+navbar
+.main
+  .container
+    .col-md-12.col-sm-12
+      .content-page
+          sidebar 
+          div(class="content col-md-9 col-sm-9")
+            h1 How to Setup Meeting
+            p  Below code snippet will help you in getting URLs from CloudKibo to start meeting between agent and visitor/customer
+            p  Please note that sample codes provided are written in NodeJS
+            
+            h3 Step 1 : Define header containing your token
+            pre
+                code
+                         | var  headers =  {
+                         | 'kibo-app-id'    : '556qvvi8jyvfhxrxmu73dxun9za8x5u6n59',
+                         | 'kibo-app-secret': '1121111aaaaar16cdu5h79xvx',
+                         | 'kibo-client-id' : 'abc',
+                         | 'content-type'   : 'application/x-www-form-urlencoded'
+                         |     }
+            h3 Step 2 : Call Our REST API through your server
+                pre
+                    code
+                         |                         
+                         |router.post('/schedule_meeting/generate_url', function(req, res, next) {
+                         |  var options = {
+                         |  url: 'https://api.cloudkibo.com/api/meetingchat/generate_url',
+                         |  headers:headers,
+                         |  rejectUnauthorized : false,
+                         |  form:{ 'companyid': req.body.companyid,'request_id':req.body.requestid,'agentname':req.body.agentname,'agentemail':req.body.agentemail,'visitorname':req.body.visitorname,'visitoremail':req.body.visitoremail}
+                         |  };
+                         |  function callback(error, response, body) {
+                         |    if (!error && response.statusCode == 200) {
+                         |     var url_meeting = JSON.parse(body);
+                         |     res.render("url_meeting",{meetingurl:url_meeting})
+                         |        }
+                         |    else
+                         |      {
+                         |     data = null;
+                         |     res.send('could not fetch data.');
+                         |       }
+                         |   }
+                         |    request.post(options, callback);
+                         |   });
+
+            h3 Code Explanation
+            p  Our REST API 'https://api.cloudkibo.com/api/meetingchat/generate_url' requires following parameters
+            b Parameters :
+            span companyid,request_id,agentname,visitorname,agentemail,visitoremail            
+            p request_id refers to unique id for the session between agent and visitor
+            b Response   :
+            span {url_agent : meetingurl, url_customer : meetingurl}
+            
+footer
