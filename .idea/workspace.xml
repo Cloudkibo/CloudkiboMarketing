@@ -27,19 +27,32 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/client/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="1470" max-vertical-offset="2700">
-              <caret line="107" column="29" selection-start-line="107" selection-start-column="29" selection-end-line="107" selection-end-column="29" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="1770" max-vertical-offset="3000">
+              <caret line="127" column="29" selection-start-line="127" selection-start-column="29" selection-end-line="127" selection-end-column="29" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="documentation.jade" pinned="false" current-in-tab="true">
+      <file leaf-file-name="documentation.jade" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/client/app/documentation/documentation.jade">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="1.8726416" vertical-offset="1299" max-vertical-offset="2580">
-              <caret line="166" column="0" selection-start-line="166" selection-start-column="0" selection-end-line="166" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="1629" max-vertical-offset="2595">
+              <caret line="148" column="27" selection-start-line="148" selection-start-column="27" selection-end-line="148" selection-end-column="27" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="navbar.jade" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/client/components/navbar/navbar.jade">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.53158706" vertical-offset="0" max-vertical-offset="855">
+              <caret line="23" column="12" selection-start-line="23" selection-start-column="12" selection-end-line="23" selection-end-column="12" />
+              <folding>
+                <marker date="1455024069867" expanded="true" signature="632:694" placeholder="..." />
+                <marker date="1455024069867" expanded="true" signature="709:774" placeholder="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -54,7 +67,6 @@
         <option value="$PROJECT_DIR$/client/app/features/features.jade" />
         <option value="$PROJECT_DIR$/client/components/footer/footer.jade" />
         <option value="$PROJECT_DIR$/server/config/express.js" />
-        <option value="$PROJECT_DIR$/client/components/navbar/navbar.jade" />
         <option value="$PROJECT_DIR$/client/app/blogpage/blogpage.controller.js" />
         <option value="$PROJECT_DIR$/client/app/blogpage/blogpage.controller.spec.js" />
         <option value="$PROJECT_DIR$/client/app/blogpage/blogpage.js" />
@@ -81,6 +93,7 @@
         <option value="$PROJECT_DIR$/client/index.html" />
         <option value="$PROJECT_DIR$/client/app/contact/contact.controller.js" />
         <option value="$PROJECT_DIR$/client/app/documentation/documentation.jade" />
+        <option value="$PROJECT_DIR$/client/components/navbar/navbar.jade" />
       </list>
     </option>
   </component>
@@ -118,7 +131,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -165,7 +177,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
+              <option name="myItemId" value="components" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -183,16 +195,17 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
+              <option name="myItemId" value="components" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="documentation" />
+              <option name="myItemId" value="navbar" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -209,14 +222,10 @@
     </key>
   </component>
   <component name="RunManager">
-    <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
-      <method />
-    </configuration>
     <configuration default="true" type="DartUnitRunConfigurationType" factoryName="DartUnit">
       <method />
     </configuration>
-    <configuration default="true" type="JavaScriptTestRunnerKarma" factoryName="Karma" config-file="">
-      <envs />
+    <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
       <method />
     </configuration>
     <configuration default="true" type="JSTestDriver:ConfigurationType" factoryName="JsTestDriver">
@@ -224,6 +233,10 @@
       <setting name="settingsFile" value="" />
       <setting name="serverType" value="INTERNAL" />
       <setting name="preferredDebugBrowser" value="Chrome" />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerKarma" factoryName="Karma" config-file="">
+      <envs />
       <method />
     </configuration>
     <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
@@ -305,13 +318,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/client/app/contact/contact.controller.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="180">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/server/app.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="855">
@@ -653,17 +659,28 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/client/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1470" max-vertical-offset="2700">
-          <caret line="107" column="29" selection-start-line="107" selection-start-column="29" selection-end-line="107" selection-end-column="29" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="1770" max-vertical-offset="3000">
+          <caret line="127" column="29" selection-start-line="127" selection-start-column="29" selection-end-line="127" selection-end-column="29" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/client/app/documentation/documentation.jade">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.8726416" vertical-offset="1299" max-vertical-offset="2580">
-          <caret line="166" column="0" selection-start-line="166" selection-start-column="0" selection-end-line="166" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="1629" max-vertical-offset="2595">
+          <caret line="148" column="27" selection-start-line="148" selection-start-column="27" selection-end-line="148" selection-end-column="27" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/components/navbar/navbar.jade">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.53158706" vertical-offset="0" max-vertical-offset="855">
+          <caret line="23" column="12" selection-start-line="23" selection-start-column="12" selection-end-line="23" selection-end-column="12" />
+          <folding>
+            <marker date="1455024069867" expanded="true" signature="632:694" placeholder="..." />
+            <marker date="1455024069867" expanded="true" signature="709:774" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>
