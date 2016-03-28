@@ -7,7 +7,21 @@ navbar
           div(class="content col-md-9 col-sm-9")
             h1 How to Authenticate
             p  Your application first need to obtain a token containing ApplicationID and Secret Key from CloudKibo. Once authenticated,Application's front end or back end can request our services using a Rest API.
-            
+            p  To get authentication token,email us at 
+                b
+                  |support@cloudkibo.com
+            p specifying your name,your company name and contact number with subject line 
+                b
+                  | Authentication Token Required
+            p To fetch data from CloudKibo,authentication token should be added in the request header
+            h3 For each request,define header containing your token
+            pre
+                code
+                         | var  headers =  {
+                         | 'kibo-app-id'    : 'your kibo-app-id',
+                         | 'kibo-app-secret': 'your kibo-app-secret',
+                         | 'kibo-client-id' : 'your kibo-client-id',
+                         |     }
                      
 
 footer
