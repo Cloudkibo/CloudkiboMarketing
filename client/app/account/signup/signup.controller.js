@@ -1,7 +1,7 @@
 'use strict';
 
 angular.module('cloudMktApp')
-  .controller('SignupCtrl', function ($scope, $location, $window) {
+  .controller('SignupCtrl', function ($scope, $location, $window, $http) {
     $scope.user = {};
     $scope.errors = {};
 
@@ -9,8 +9,6 @@ angular.module('cloudMktApp')
 
 	$scope.addAlertRegister = function(newtype, newMsg) {
 		$scope.alertsRegister.push({type: newtype, msg: newMsg});
-    $log.info('registering ');
-    logger.log('registering ');
 	};
 
 	$scope.closeAlertRegister = function(index) {
@@ -22,38 +20,28 @@ angular.module('cloudMktApp')
 	};
 
     $scope.register = function(form) {
-      $log.info('registered account with info '+ form);
-      logger.log('registered account with info '+ form);
+      console.log('registered account with info '+ form);
 
       $scope.submitted = true;
 
       $scope.progressState = true;
 
-      if(form.$valid) {
-        // Auth.createUser($scope.user)
-        // .then( function() {
-        //   // Account created, redirect to home
-        //   $scope.progressState = false;
-        //   $location.path('#verifyview');
-        // })
-        // .catch( function(err) {
-        //     $log.error('Error in registering account '+err)
-        //     logger.log('Error: registering account '+err)
-        //   err = err.data;
-        //   $scope.progressState = false;
-        //
-        //
-        //   $scope.errors = {};
-        //
-        //   // Update validity of form fields that match the mongoose errors
-        //   angular.forEach(err.errors, function(error, field) {
-        //     //form[field].$setValidity('mongoose', false);
-        //     //$scope.errors[field] = error.message;
-        //     $scope.addAlertRegister('danger', error.message)
-        //     logger.log('danger', error.message)
-        //   });
-        // });
-      }
+      $http.post('/api/deployments/save', JSON.stringify($scope.user))
+        .success(function(data) {
+
+          $scope.progressState = false;
+
+          console.log('Agent successfully applied for password reset email in Forgot Password Controller');
+
+          $scope.addAlertRegister(data.status, data.msg);
+          if(data.status == 'success')
+            $scope.sentData = true;
+        })
+        .error(function(data){
+          //console.log('Agent could not apply for password reset email in Forgot Password Controller, '+ JSON.stringify(data));
+          $scope.progressState = false;
+          $scope.addAlertRegister('danger', 'Server Error, please talk to developer '+ JSON.stringify(data));
+        });
     };
 
     $scope.loginOauth = function(provider) {

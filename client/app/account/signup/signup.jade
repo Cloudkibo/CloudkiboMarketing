@@ -8,7 +8,6 @@ navbar
       // BEGIN SIDEBAR & CONTENT
       .row.margin-bottom-40
         // BEGIN SIDEBAR
-        div(ng-include='"components/front-sidebar/front-sidebar.html"', ng-controller='SignupCtrl')
         // BEGIN CONTENT
         .col-md-9.col-sm-9
           h1 Register your admin account
@@ -87,7 +86,7 @@ navbar
                     button.btn.btn-account.btn-send(type='submit', ng-disabled='form.$invalid || isUnchanged(user)') Submit
                     br
                     div(ng-show='underProgress()', style='text-align:center;')
-                      img(src='/images/ProgressIcon.gif', width='60px', height='60px')
+                      img(src='/assets/images/ProgressIcon.gif', width='60px', height='60px')
                     br
                     alert(ng-repeat='alert in alertsRegister', type='alert.type', close='closeAlertRegister($index)') {{alert.msg}}
 footer
