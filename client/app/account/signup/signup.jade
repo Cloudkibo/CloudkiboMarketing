@@ -1,0 +1,92 @@
+navbar
+.main
+    .container
+      //ul.breadcrumb
+        li
+          a(href='/') Home
+        li.active Sign up
+      // BEGIN SIDEBAR & CONTENT
+      .row.margin-bottom-40
+        // BEGIN SIDEBAR
+        // BEGIN CONTENT
+        .col-md-9.col-sm-9
+          h1 Register your admin account
+          .content-form-page
+            .row
+              .col-md-7.col-sm-7
+                span * required to fill these field
+                form.css-form(name='form', ng-submit='register(form)', novalidate='novalidate', method='post', role='form')
+                  .form-group
+                    label First Name *
+                    .input-group
+                      input.form-control(type='text', name='firstname', placeholder='First Name', ng-model='user.firstname', required='required', ng-minlength='2', ng-maxlength='25', ng-focus='ng-focus')
+                      div(ng-show='form.firstname.$dirty && !form.firstname.$focused')
+                        div(ng-show='form.firstname.$invalid')
+                          span(ng-show='form.firstname.$error.required') Enter the first name.
+                          span(ng-show='form.firstname.$error.minlength') First name is too short.
+                          span(ng-show='form.firstname.$error.maxlength') First name is too big.
+                  .form-group
+                    label Last Name *
+                    .input-group
+                      input.form-control(type='text', name='lastname', placeholder='Last Name', ng-model='user.lastname', required='required', ng-minlength='2', ng-maxlength='25', ng-focus='ng-focus')
+                      div(ng-show='form.lastname.$dirty && !form.lastname.$focused')
+                        div(ng-show='form.lastname.$invalid')
+                          span(ng-show='form.lastname.$error.required') Enter the last name.
+                          span(ng-show='form.lastname.$error.minlength') Last name is too short.
+                          span(ng-show='form.lastname.$error.maxlength') Last name is too big.
+                  .form-group
+                    label Email Address *
+                    .input-group
+                      input.form-control(type='email', name='email', placeholder='Email Address', ng-model='user.email', required='required', ng-focus='ng-focus')
+                      div(ng-show='form.email.$dirty && !form.email.$focused')
+                        div(ng-show='form.email.$invalid')
+                          span(ng-show='form.email.$error.required') Enter your email address.
+                          span(ng-show='form.email.$error.email') This is not a valid email address.
+                  .form-group
+                    label Password *
+                    .input-group
+                      input#password.form-control(type='password', name='password', placeholder='Password', ng-model='user.password', ng-minlength='6', required='required', ng-focus='ng-focus')
+                      div(ng-show='form.password.$dirty && !form.password.$focused')
+                        div(ng-show='form.password.$invalid')
+                          span(ng-show='form.password.$error.required') Enter the password.
+                          span(ng-show='form.password.$error.minlength') Length of password should be greater than 6 characters.
+                  .form-group
+                    label Confirm Password *
+                    .input-group
+                      input#confirm-password.form-control(type='password', name='confirm-password', placeholder='Confirm Password', ng-model='user.password2', ng-minlength='6', required='required', ng-focus='ng-focus')
+                      div(ng-show='form.confirm-password.$dirty && !form.confirm-password.$focused')
+                        div(ng-show='form.confirm-password.$invalid')
+                          span(ng-show='form.confirm-password.$error.required') Confirm password.
+                          span(ng-show='form.confirm-password.$error.password') Password do not match.
+                  .form-group
+                    label Phone *
+                    .input-group
+                      input.form-control(type='text', name='phoneNumber', placeholder='Phone Number', ng-model='user.phone', required='required', ng-focus='ng-focus')
+                      div(ng-show='form.phoneNumber.$dirty && !form.phoneNumber.$focused')
+                        div(ng-show='form.phoneNumber.$invalid')
+                          span(ng-show='form.phoneNumber.$error.required') Enter your contact number.
+                          span(ng-show='form.email.$error.phoneNumber') This is not a valid phone number.
+                  .form-group
+                    label Company Name *
+                    .input-group
+                      input.form-control(type='text', name='companyName', placeholder='Company name', ng-model='user.companyName', required='required', ng-focus='ng-focus')
+                      div(ng-show='form.companyName.$dirty && !form.companyName.$focused')
+                        div(ng-show='form.companyName.$invalid')
+                          span(ng-show='form.companyName.$error.required') Enter the Company name.
+                  .form-group
+                    label Company Domain Name *
+                    .input-group
+                      input.form-control(type='text', name='website', placeholder='Domain name', ng-model='user.website', required='required', ng-focus='ng-focus')
+                      small e.g. companydomain as in companydomain.cloudkibo.com
+                      div(ng-show='form.website.$dirty && !form.website.$focused')
+                        div(ng-show='form.website.$invalid')
+                          span(ng-show='form.website.$error.required') Enter the Domain name.
+                    br
+                    br
+                    button.btn.btn-account.btn-send(type='submit', ng-disabled='form.$invalid || isUnchanged(user)') Submit
+                    br
+                    div(ng-show='underProgress()', style='text-align:center;')
+                      img(src='/assets/images/ProgressIcon.gif', width='60px', height='60px')
+                    br
+                    alert(ng-repeat='alert in alertsRegister', type='alert.type', close='closeAlertRegister($index)') {{alert.msg}}
+footer
